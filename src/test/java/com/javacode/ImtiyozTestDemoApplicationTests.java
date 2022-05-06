@@ -8,8 +8,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ImtiyozTestDemoApplicationTests {
 
-    @Autowired
-    private EmployeeService employeeService;
     @Test
     void contextLoads() {
 

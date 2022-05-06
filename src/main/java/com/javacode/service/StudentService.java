@@ -25,7 +25,6 @@ import static com.javacode.constants.StudentConstants.*;
 
 @Slf4j
 @Service
-//@RequiredArgsConstructor
 public class StudentService {
 
     @Value("${app.username}")
@@ -37,7 +36,7 @@ public class StudentService {
     private WebClient webClient;
 
     @Autowired
-    public StudentService(@Qualifier("webClient") WebClient webClient) {
+    public StudentService(@Qualifier("createWebClient") WebClient webClient) {
         this.webClient = webClient;
     }
 

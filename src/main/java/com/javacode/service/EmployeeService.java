@@ -20,12 +20,10 @@ import static com.javacode.constants.StudentConstants.EMPLOYEE_API;
 public class EmployeeService {
 
     private final WebClient webClient;
-    private final SOAPRequestService soapRequestService;
 
     @Autowired
-    public EmployeeService(@Qualifier("webClient") WebClient webClient, SOAPRequestService soapRequestService) {
+    public EmployeeService(@Qualifier("webClient") WebClient webClient) {
         this.webClient = webClient;
-        this.soapRequestService = soapRequestService;
     }
 
     public String getEmployeeById(EmployeeDTO dto) throws JAXBException, IOException {

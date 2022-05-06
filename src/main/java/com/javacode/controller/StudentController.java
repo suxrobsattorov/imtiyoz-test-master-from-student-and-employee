@@ -1,10 +1,8 @@
 package com.javacode.controller;
 
-import com.javacode.dto.AuthDTO;
 import com.javacode.dto.StudentDTO;
 import com.javacode.service.StudentService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
